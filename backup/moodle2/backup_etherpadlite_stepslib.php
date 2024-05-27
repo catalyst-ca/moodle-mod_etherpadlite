@@ -94,7 +94,7 @@ class backup_etherpadlite_activity_structure_step extends backup_activity_struct
 
                     $data               = new \stdClass();
                     $data->grouppaddata = serialize($grouppaddata);
-                    // The HTML content of the main pad.
+                    // The HTML content of the main pad. 
                     $html       = $client->get_html($padid);
                     $text       = $client->get_text($padid);
                     $data->html = $html->html;
